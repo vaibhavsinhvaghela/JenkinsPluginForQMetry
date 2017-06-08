@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.test1.TextExamplePublisher_-DescriptorImpl plugin="test1@1.0-SNAPSHOT">
+  <useFrench>true</useFrench>
+</org.jenkinsci.plugins.test1.TextExamplePublisher_-DescriptorImpl>
