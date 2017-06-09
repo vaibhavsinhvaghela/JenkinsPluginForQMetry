@@ -16,6 +16,9 @@ import hudson.tasks.BuildStepMonitor;
 import hudson.tasks.Publisher;
 import jenkins.tasks.SimpleBuildStep;
 import net.sf.json.JSONObject;
+
+import org.apache.commons.io.IOUtils;
+
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.StaplerRequest;
 
@@ -23,6 +26,11 @@ import org.kohsuke.stapler.QueryParameter;
 
 import javax.servlet.ServletException;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.StringWriter;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 /**
  * Sample {@link Builder}.
@@ -41,7 +49,7 @@ import java.io.IOException;
  * @author Kohsuke Kawaguchi
  */
 public class TextExamplePublisher extends Recorder implements SimpleBuildStep {
-	ConnectionToServer cs=new ConnectionToServer();
+	
 	 private String name;
      private String version;
      private String apikey;
@@ -53,45 +61,114 @@ public class TextExamplePublisher extends Recorder implements SimpleBuildStep {
      private String component;
      private static String selection;
      
-     public String getSelection(){
+     public static String getSelection(JSONObject obj){
     	 return selection;
      }
     
-    public String getName(){
-    	return name;
-    }
-    public String getVersion() {
-        return version;
-    }
-     
-    public String getApikey() {
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public String getVersion() {
+		return version;
+	}
+
+
+	public void setVersion(String version) {
+		this.version = version;
+	}
+
+
+
+	public String getApikey() {
 		return apikey;
 	}
+
+
+
+	public void setApikey(String apikey) {
+		this.apikey = apikey;
+	}
+
+
 
 	public String getQtm4jurl() {
 		return qtm4jurl;
 	}
 
+
+
+	public void setQtm4jurl(String qtm4jurl) {
+		this.qtm4jurl = qtm4jurl;
+	}
+
+
+
 	public String getFile() {
 		return file;
 	}
+
+
+
+	public void setFile(String file) {
+		this.file = file;
+	}
+
+
 
 	public String getTestrunname() {
 		return testrunname;
 	}
 
+
+
+	public void setTestrunname(String testrunname) {
+		this.testrunname = testrunname;
+	}
+
+
+
 	public String getLabels() {
 		return labels;
 	}
+
+
+
+	public void setLabels(String labels) {
+		this.labels = labels;
+	}
+
+
 
 	public String getSprint() {
 		return sprint;
 	}
 
+
+
+	public void setSprint(String sprint) {
+		this.sprint = sprint;
+	}
+
+
+
 	public String getComponent() {
 		return component;
 	}
-	
+
+
+
+	public void setComponent(String component) {
+		this.component = component;
+	}
+
+
+
 	public TextExamplePublisher(){
 		
 	}
@@ -120,14 +197,34 @@ public class TextExamplePublisher extends Recorder implements SimpleBuildStep {
         // This is where you 'build' the project.
         // Since this is a dummy, we just say 'hello world' and call that a build.
         // This also shows how you can consult the global configuration of the builder
-    	
+    	UploadReport ur;
     	//----------------------------------------------------------------------------
     	//----------------------------------------------------------------------------
     	try {
 			//con.sendingPostRequest();
-    		HttpPostExample hp=new HttpPostExample();
-    		hp.sendPostReq();
-    		listener.getLogger().println("Called the API");
+    		URL url = new URL(this.getQtm4jurl());
+    		HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+    		connection.setRequestMethod("POST");
+    		connection.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+    		connection.setDoInput(true);
+    		connection.setDoOutput(true);
+
+    		StringBuilder jsonBody = new StringBuilder("{");
+    		jsonBody.append("\"format\":" + "\"testng/xml\",");
+    		jsonBody.append("\"testRunName\":" + "\""+this.getTestrunname()+"\",");
+    		jsonBody.append("\"apiKey\":" + "\""+this.getApikey()+"\"");
+    		jsonBody.append("}");
+
+    		OutputStream os = connection.getOutputStream();
+    		os.write(jsonBody.toString().getBytes("UTF-8"));
+    		InputStream fis = connection.getInputStream();
+
+    		StringWriter response = new StringWriter();
+    		String encoding = "UTF-8";
+    		IOUtils.copy(fis, response, encoding);
+    		System.out.println(response.toString());
+    		System.out.println(UploadReport.uploadToS3(response.toString(),this.getFile()));
+    		 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -204,11 +301,18 @@ public class TextExamplePublisher extends Recorder implements SimpleBuildStep {
         public FormValidation doCheckApikey(@QueryParameter String value)
                 throws IOException, ServletException {
             if (value.length() == 0)
-                return FormValidation.error("Please enter the API Key");
+                return FormValidation.error("API Key");
             return FormValidation.ok();
         }
         
         public FormValidation doCheckTestrunname(@QueryParameter String value)
+                throws IOException, ServletException {
+            if (value.length() == 0)
+                return FormValidation.error("Please give 'Test run name'");
+            return FormValidation.ok();
+        }
+        
+        public FormValidation doCheckQtm4jurl(@QueryParameter String value)
                 throws IOException, ServletException {
             if (value.length() == 0)
                 return FormValidation.error("Please give 'Test run name'");

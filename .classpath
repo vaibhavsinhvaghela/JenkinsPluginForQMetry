@@ -768,5 +768,6 @@
 			<attribute name="javadoc_location" value="jar:file:/Users/vaibhavvaghela/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.7/jcl-over-slf4j-1.7.7-javadoc.jar!/"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="json-simple-1.1.jar"/>
 	<classpathentry kind="output" path="target/eclipse-classes"/>
 </classpath>

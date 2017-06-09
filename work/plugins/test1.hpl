@@ -3,21 +3,22 @@ Group-Id: org.jenkins-ci.plugins
 Short-Name: test1
 Long-Name: TODO Plugin
 Url: https://wiki.jenkins-ci.org/display/JENKINS/TODO+Plugin
-Plugin-Version: 1.0-SNAPSHOT (private-06/07/2017 16:43-root)
+Plugin-Version: 1.0-SNAPSHOT (private-c762b236-root)
 Hudson-Version: 1.625.3
 Jenkins-Version: 1.625.3
 Plugin-Dependencies: credentials:2.0
 Plugin-Developers: 
-Libraries: /Users/vaibhavvaghela/Documents/plugin/dom/test1/src/main/r
- esources,/Users/vaibhavvaghela/Documents/plugin/dom/test1/target/clas
- ses,/var/root/.m2/repository/org/apache/httpcomponents/httpclient-cac
- he/4.5.3/httpclient-cache-4.5.3.jar,/var/root/.m2/repository/org/apac
- he/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar,/var/root/.m2
- /repository/org/apache/httpcomponents/fluent-hc/4.5.3/fluent-hc-4.5.3
- .jar,/var/root/.m2/repository/org/apache/httpcomponents/httpmime/4.5.
- 3/httpmime-4.5.3.jar,/var/root/.m2/repository/commons-codec/commons-c
- odec/1.9/commons-codec-1.9.jar,/var/root/.m2/repository/org/apache/ht
- tpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar
-Resource-Path: /Users/vaibhavvaghela/Documents/plugin/dom/test1/src/ma
- in/webapp
+Libraries: /Users/vaibhavvaghela/Desktop/QMetryJenkinsPlugin/src/main/
+ resources,/Users/vaibhavvaghela/Desktop/QMetryJenkinsPlugin/target/cl
+ asses,/var/root/.m2/repository/org/apache/httpcomponents/httpcore/4.4
+ .6/httpcore-4.4.6.jar,/var/root/.m2/repository/org/apache/httpcompone
+ nts/httpclient/4.5.3/httpclient-4.5.3.jar,/var/root/.m2/repository/co
+ mmons-codec/commons-codec/1.9/commons-codec-1.9.jar,/var/root/.m2/rep
+ ository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar,/
+ var/root/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/
+ json-simple-1.1.1.jar,/var/root/.m2/repository/org/apache/httpcompone
+ nts/fluent-hc/4.5.3/fluent-hc-4.5.3.jar,/var/root/.m2/repository/org/
+ apache/httpcomponents/httpclient-cache/4.5.3/httpclient-cache-4.5.3.jar
+Resource-Path: /Users/vaibhavvaghela/Desktop/QMetryJenkinsPlugin/src/m
+ ain/webapp
 

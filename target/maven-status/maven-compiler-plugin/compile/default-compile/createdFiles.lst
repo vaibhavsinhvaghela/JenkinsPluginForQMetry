@@ -1,9 +1,10 @@
+org/jenkinsci/plugins/test1/TextExamplePublisher/DescriptorImpl/doCheckQtm4jurl.stapler
 org/jenkinsci/plugins/test1/TextExamplePublisher/DescriptorImpl/doFillSelectionItems.stapler
 org/jenkinsci/plugins/test1/HttpPostExample.class
 org/jenkinsci/plugins/test1/TextExamplePublisher/DescriptorImpl/doCheckApikey.stapler
 org/jenkinsci/plugins/test1/TextExamplePublisher.class
 org/jenkinsci/plugins/test1/TextExamplePublisher.stapler
-org/jenkinsci/plugins/test1/ConnectionToServer.class
+org/jenkinsci/plugins/test1/UploadReport.class
 org/jenkinsci/plugins/test1/TextExamplePublisher$DescriptorImpl.class
 org/jenkinsci/plugins/test1/TextExamplePublisher/DescriptorImpl/doCheckTestrunname.stapler
 META-INF/annotations/hudson.Extension

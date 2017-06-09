@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders/>
+  <publishers>
+    <org.jenkinsci.plugins.test1.TextExamplePublisher plugin="test1@1.0-SNAPSHOT">
+      <cs/>
+      <version></version>
+      <apikey>6100ac4441f4f8b089cd36d5cbd72acee1e2a5973675e3c1542440822d2d5268</apikey>
+      <qtm4jurl>https://importresults.qmetry.com/preprod/importresults-qtm4j</qtm4jurl>
+      <file>/Users/vaibhavvaghela/Downloads/testng-results-wayne.xml</file>
+      <testrunname>Test Run</testrunname>
+      <labels></labels>
+      <sprint></sprint>
+      <component></component>
+    </org.jenkinsci.plugins.test1.TextExamplePublisher>
+  </publishers>
+  <buildWrappers/>
+</project>

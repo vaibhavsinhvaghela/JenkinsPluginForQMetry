@@ -36,5 +36,6 @@
   </f:entry>
   <f:entry title="Format" field="selection">
   <f:select/>
-</f:entry>
+  </f:entry>
+
 </j:jelly>
