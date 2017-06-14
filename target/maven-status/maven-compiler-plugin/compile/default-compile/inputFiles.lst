@@ -1,4 +1,5 @@
-/Users/vaibhavvaghela/Desktop/QMetryJenkinsPlugin/src/main/java/org/jenkinsci/plugins/test1/UploadReport.java
-/Users/vaibhavvaghela/Desktop/QMetryJenkinsPlugin/src/main/java/org/jenkinsci/plugins/test1/OnlineRootAction.java
 /Users/vaibhavvaghela/Desktop/QMetryJenkinsPlugin/src/main/java/org/jenkinsci/plugins/test1/TextExamplePublisher.java
-/Users/vaibhavvaghela/Desktop/QMetryJenkinsPlugin/src/main/java/org/jenkinsci/plugins/test1/HttpPostExample.java
+/Users/vaibhavvaghela/Desktop/QMetryJenkinsPlugin/src/main/java/org/jenkinsci/plugins/test1/UploadToServer.java
+/Users/vaibhavvaghela/Desktop/QMetryJenkinsPlugin/src/main/java/org/jenkinsci/plugins/test1/S3BucketReportUploader.java
+/Users/vaibhavvaghela/Desktop/QMetryJenkinsPlugin/src/main/java/org/jenkinsci/plugins/test1/MultipartUtility.java
+/Users/vaibhavvaghela/Desktop/QMetryJenkinsPlugin/src/main/java/org/jenkinsci/plugins/test1/UploadToCloud.java

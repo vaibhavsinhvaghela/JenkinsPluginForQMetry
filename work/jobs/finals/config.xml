@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders/>
+  <publishers>
+    <org.jenkinsci.plugins.test1.TextExamplePublisher plugin="test1@1.0-SNAPSHOT">
+      <version></version>
+      <apikey></apikey>
+      <qtm4jurl></qtm4jurl>
+      <file></file>
+      <testrunname></testrunname>
+      <labels></labels>
+      <sprint></sprint>
+      <component></component>
+      <apikeyserver>5568942d56add3a6d99a0225969c2d032836346b8e2dc390766b6839f637d665</apikeyserver>
+      <jiraurlserver>http://qtmstag.infostretch.com/rest/qtm/latest/automation/importresults</jiraurlserver>
+      <username>admin</username>
+      <password>icpl123#</password>
+      <testrunnameserver>New Test run</testrunnameserver>
+      <labelsserver></labelsserver>
+      <sprintserver></sprintserver>
+      <versionserver></versionserver>
+      <componentserver></componentserver>
+      <testToRun>SERVER</testToRun>
+      <fileserver>/Users/vaibhavvaghela/Downloads/testng-results-wayne.xml</fileserver>
+    </org.jenkinsci.plugins.test1.TextExamplePublisher>
+  </publishers>
+  <buildWrappers/>
+</project>

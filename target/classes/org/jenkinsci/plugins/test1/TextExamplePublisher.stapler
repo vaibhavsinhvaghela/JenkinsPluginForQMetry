@@ -1,2 +1,2 @@
-#Thu Jun 08 17:33:50 PDT 2017
-constructor=name,apikey,qtm4jurl,file,testrunname,labels,sprint,version,component
+#Tue Jun 13 19:47:24 PDT 2017
+constructor=name,apikey,qtm4jurl,file,testrunname,labels,sprint,version,component,selection,apikeyserver,jiraurlserver,password,testrunnameserver,labelsserver,sprintserver,versionserver,componentserver,username,fileserver,selectionserver,testToRun

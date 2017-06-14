@@ -22,6 +22,15 @@
       <labels></labels>
       <sprint></sprint>
       <component></component>
+      <apikeyserver>ef4621fca988445f71b14714c45c3a84947c0d745ddf81922c00455a2fab84be</apikeyserver>
+      <jiraurlserver>http://qtmstag.infostretch.com/rest/qtm/latest/automation/importresults</jiraurlserver>
+      <username>admin</username>
+      <password>icpl123#</password>
+      <testrunnameserver>Test run</testrunnameserver>
+      <labelsserver></labelsserver>
+      <sprintserver></sprintserver>
+      <versionserver></versionserver>
+      <componentserver></componentserver>
     </org.jenkinsci.plugins.test1.TextExamplePublisher>
   </publishers>
   <buildWrappers/>

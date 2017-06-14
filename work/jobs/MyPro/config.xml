@@ -14,7 +14,6 @@
   <builders/>
   <publishers>
     <org.jenkinsci.plugins.test1.TextExamplePublisher plugin="test1@1.0-SNAPSHOT">
-      <cs/>
       <version></version>
       <apikey>6100ac4441f4f8b089cd36d5cbd72acee1e2a5973675e3c1542440822d2d5268</apikey>
       <qtm4jurl>https://importresults.qmetry.com/preprod/importresults-qtm4j</qtm4jurl>
@@ -23,6 +22,17 @@
       <labels></labels>
       <sprint></sprint>
       <component></component>
+      <apikeyserver>5568942d56add3a6d99a0225969c2d032836346b8e2dc390766b6839f637d665</apikeyserver>
+      <jiraurlserver>http://qtmstag.infostretch.com/rest/qtm/latest/automation/importresults</jiraurlserver>
+      <username>admin</username>
+      <password>icpl123#</password>
+      <testrunnameserver>Test run</testrunnameserver>
+      <labelsserver></labelsserver>
+      <sprintserver></sprintserver>
+      <versionserver></versionserver>
+      <componentserver></componentserver>
+      <testToRun>SERVER</testToRun>
+      <fileserver>/Users/vaibhavvaghela/Downloads/testng-results-wayne.xml</fileserver>
     </org.jenkinsci.plugins.test1.TextExamplePublisher>
   </publishers>
   <buildWrappers/>

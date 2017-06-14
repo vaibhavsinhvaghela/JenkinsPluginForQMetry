@@ -3,22 +3,22 @@ Group-Id: org.jenkins-ci.plugins
 Short-Name: test1
 Long-Name: TODO Plugin
 Url: https://wiki.jenkins-ci.org/display/JENKINS/TODO+Plugin
-Plugin-Version: 1.0-SNAPSHOT (private-c762b236-root)
+Plugin-Version: 1.0-SNAPSHOT (private-5989a56c-root)
 Hudson-Version: 1.625.3
 Jenkins-Version: 1.625.3
 Plugin-Dependencies: credentials:2.0
 Plugin-Developers: 
 Libraries: /Users/vaibhavvaghela/Desktop/QMetryJenkinsPlugin/src/main/
  resources,/Users/vaibhavvaghela/Desktop/QMetryJenkinsPlugin/target/cl
- asses,/var/root/.m2/repository/org/apache/httpcomponents/httpcore/4.4
- .6/httpcore-4.4.6.jar,/var/root/.m2/repository/org/apache/httpcompone
- nts/httpclient/4.5.3/httpclient-4.5.3.jar,/var/root/.m2/repository/co
- mmons-codec/commons-codec/1.9/commons-codec-1.9.jar,/var/root/.m2/rep
- ository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar,/
- var/root/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/
- json-simple-1.1.1.jar,/var/root/.m2/repository/org/apache/httpcompone
- nts/fluent-hc/4.5.3/fluent-hc-4.5.3.jar,/var/root/.m2/repository/org/
- apache/httpcomponents/httpclient-cache/4.5.3/httpclient-cache-4.5.3.jar
+ asses,/var/root/.m2/repository/org/apache/httpcomponents/httpclient/4
+ .5.2/httpclient-4.5.2.jar,/var/root/.m2/repository/commons-codec/comm
+ ons-codec/1.9/commons-codec-1.9.jar,/var/root/.m2/repository/org/apac
+ he/httpcomponents/httpclient-cache/4.5.3/httpclient-cache-4.5.3.jar,/
+ var/root/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/http
+ mime-4.5.3.jar,/var/root/.m2/repository/com/googlecode/json-simple/js
+ on-simple/1.1.1/json-simple-1.1.1.jar,/var/root/.m2/repository/org/ap
+ ache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar,/var/root/.m2/r
+ epository/org/apache/httpcomponents/fluent-hc/4.5.3/fluent-hc-4.5.3.jar
 Resource-Path: /Users/vaibhavvaghela/Desktop/QMetryJenkinsPlugin/src/m
  ain/webapp
 
